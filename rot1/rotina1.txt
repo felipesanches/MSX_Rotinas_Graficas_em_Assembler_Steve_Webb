@@ -1,11 +1,8 @@
 end. inicial: 56000 = DAC0
 end. final:   56088 = DB18
 
-
-DAC0: 21 00 00   ld hl, 0x0000 ; hl=0
-DAC3: 01 20 00   ld bc, 0x0020 ; bc=32
-DAC6: 3A AF FC   ld a, (0xFCAF) ; ptr = 0xFCAF; a = *ptr;
-DAC9: 3D CA D0 DA 01 28 00
+21 00 00 01 20 00 3A AF
+FC 3D CA D0 DA 01 28 00
 3a 31 F2 3D CA DB DA 09
 C3 D3 DA 11 00 00 3A 30
 F2 3D 5F 19 ED 5B 22 F9
