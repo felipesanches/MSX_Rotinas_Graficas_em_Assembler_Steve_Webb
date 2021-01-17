@@ -48,7 +48,7 @@ DAF0: CD 4D 00      call READ_VRAM
 DAF3: 09            add hl, bc
 DAF4: F1            pop af
 DAF5: 3D            dec a
-DAF9: 3A 40 F2      ld (CHAR), a
+DAF9: 3A 40 F2      ld a, (CHAR)
 DAFC: CD 4D 00      call WRITE_VRAM
 DAFF: 13            inc de
 DB00: D5            push de

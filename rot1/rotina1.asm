@@ -33,7 +33,7 @@ DAF3: 09            add hl, bc
 DAF4: F1            pop af
 DAF5: 3D            dec a
 DAF6: c2 F9 DA      jp nz, 0xDAF9
-DAF9: 3A 40 F2      ld (0xF240), a
+DAF9: 3A 40 F2      ld a, (0xF240)
 DAFC: CD 4D 00      call 0x004D
 DAFF: 13            inc de
 DB00: D5            push de
